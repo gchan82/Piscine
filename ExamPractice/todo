@@ -1,6 +1,6 @@
 next practice:
-1-0-repeat_alpha
-1-0-ft-strlen
-1-0-ft_strcpy
 
-2-0-union
+
+notes:
+1-0-ft_strcpy - could not get main function to run. code looks good tho.
+2-0-ft_atoi - compiles. Outputs 0 to screen. 

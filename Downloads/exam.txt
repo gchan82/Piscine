@@ -1,0 +1,36 @@
+https://github.com/joaquim-oliveira-neto/42-Piscine-C-Exam/tree/master/level_2
+
+https://github.com/uael/42piscine/tree/master/C/d04
+
+https://github.com/fwuensche/42-exam-miner
+
+https://github.com/jraleman/42_Exam-C
+
+-----
+
+Test-monial - test work before submission:
+https://github.com/FeeJai/42-test-monial
+
+
+----
+
+https://github.com/teddav/42Projects/tree/master/EXAMS/CBeginner0
+
+SLACK:
+https://42schoolsiliconvalley.slack.com/
+
+projects.intra.42.us.org
+
+
+Piscine Note:
+https://github.com/joaquim-oliveira-neto/42-Piscine-C
+
+
+------
+
+https://courses.edx.org/courses/course-v1:HarvardX+CS50+AP/course/
+
+-----
+
+Sudoku Solver:
+https://www.youtube.com/watch?v=f_5FgfvHw30

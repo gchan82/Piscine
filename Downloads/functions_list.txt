@@ -1,0 +1,98 @@
+Day 2
+ex00 - ft_print_alphabet
+ex01 - ft_print_reverse_alphabet
+ex02 - ft_print_numbers
+Ex03 - ft_is_negative
+Ex04 - ft_print_comb
+Ex05 - ft_print comb2
+Ex06 - fr_putnbr
+Ex07 - ft_print_combn
+
+Day3
+Ex00 - ft_ft
+Ex01 - ft_ultimate_ft
+Ex02 - ft_swap
+Ex03 - ft_div_mod
+Ex04 - ft_ultimate_div_mod
+Ex05 - ft_putstr
+Ex06 - ft_strlen
+Ex07 - ft_strrv
+Ex08 - ft_atoi
+Ex09 - ft_sort_integer_table
+
+Day4
+Ex00 - ft_iterative_factorial
+Ex01 - ft_recursive_factorial
+Ex02 - ft_iterative_power
+Ex03 - ft_recursive_power
+Ex04 - ft_fibonacci
+Ex05 - ft_sqrt
+Ex06 - ft_is_prime
+Ex07 - ft_find_next_prime
+Ex08 - Eight Queens
+Ex09 - Eight Queens2
+
+Day5
+Ex00 - ft_putstr
+ex01 - ft_putnbr (Day2 - ex06)
+Ex02 - ft_atoi (Day3 - ex08)
+Ex03 - ft_strcpy
+Ex04 - ft_strncpy
+Ex05 - ft_strstr
+Ex06 - ft_strcmp
+Ex07 - ft_strncmp
+Ex08 - ft_strupcase
+Ex09 - ft_strlowcase
+Ex10 - ft_strcapitalize
+Ex11 - ft_str_is_alpha
+Ex12 - ft_str_is_numeric
+Ex13 - ft_str_is_lowercase
+Ex14 - ft_str_is_uppercase
+Ex15 - ft_str_is_printable
+Ex16 - ft_strcat
+Ex17 - ft_strncat
+Ex18 - ft_strlcat
+Ex19 - ft_strlcpy
+Ex20 - ft_putnbr_base
+Ex21 - ft_atoi_base
+Ex22 - ft_putstr_non_printable
+Ex23 - ft_print_memory
+
+Day6
+Ex00 - libft (asks for ft_putchar, ft_swap, ft_putstr, ft_strlen, ft_strcmp)
+Ex01 - ft_print_program_name
+Ex02 - ft_print_params
+Ex03 - ft_rev_params
+Ex04 - ft_sort_params
+
+Day7
+Ex00 - ft_strdup
+Ex01 - ft_range
+Ex02 - ft_ultimate_range
+Ex03 - ft_concat_params
+Ex04 - ft_split_whitespaces
+Ex05 - ft_print_words_tables
+Ex06 - ft_convert_base
+Ex07 - ft_split
+
+Day8
+Ex00 - ft_split_whitespace (Day7 - ex04)
+Ex01 - ft.h (reference: Day6 - Ex00 libft)
+Ex02 - ft_boolean
+Ex03 - ft_abs
+Ex04 - ft_point
+Ex05 - ft_param_to_tab
+Ex06 - ft_show_tab
+
+Day 10 (goal: ex00-06)
+Ex00 - Makefile (ft_putchar, ft_putstr, ft_strcmp, ft_strlen, ft_swap) (.., Day5-ex00, Day5-ex06, Day3-ex06, Day3-ex02) (libft.a - Day6-ex00)
+Ex01 - Ft_foreach (ft_putnbr - Day5-ex01)
+Ex02 - ft_map
+Ex03 - ft_any
+Ex04 - ft_count_if
+Ex05 - ft_is_sort
+Ex06 - do-op (WHOLE PROJECT LIKE Day10-ex00) (need atoi - Day5-ex02, ft_putchar, ft_putnbr - Day5-ex01, ft_calculate, ft_sum, ft_mul, ft_div, ft_mod( (ft.h -> headers.h (Day8-ex01), ft_sub
+Ex07 - ft_sort_wordtab
+Ex08 - ft_advanced_sort_wordtab
+Ex09 - ft_advanced_do-op
+
