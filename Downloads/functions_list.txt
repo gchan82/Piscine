@@ -19,7 +19,7 @@ Ex06 - ft_strlen
 Ex07 - ft_strrv
 Ex08 - ft_atoi
 Ex09 - ft_sort_integer_table
-
+/nfs/2019/g/gachan/Downloads/functions_list.txt
 Day4
 Ex00 - ft_iterative_factorial
 Ex01 - ft_recursive_factorial

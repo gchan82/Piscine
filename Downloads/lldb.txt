@@ -1,0 +1,11 @@
+gcc -g aff_first_aram.c
+lldb a.out first-parameter
+b main
+r
+gui
+
+Press s to advance through debugger.
+
+esc
+
+exit

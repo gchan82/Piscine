@@ -6,6 +6,8 @@ https://github.com/fwuensche/42-exam-miner
 
 https://github.com/jraleman/42_Exam-C
 
+https://github.com/pbondoer/42-evalexpr
+
 -----
 
 Test-monial - test work before submission:
