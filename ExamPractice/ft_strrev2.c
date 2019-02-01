@@ -1,38 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rot_13.c                                           :+:      :+:    :+:   */
+/*   ft_strrev2.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gachan <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/30 12:35:51 by gachan            #+#    #+#             */
-/*   Updated: 2019/01/31 11:35:08 by gachan           ###   ########.fr       */
+/*   Created: 2019/01/31 10:54:32 by gachan            #+#    #+#             */
+/*   Updated: 2019/01/31 11:22:52 by gachan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int		main(int argc, char **argv)
+char		*ft_strrev(char *str)
 {
 	int i;
+	int len;
+	char copy;
 
+	len = 0;
 	i = 0;
-	if (argc == 2)
+	//str len
+	while(str[len])
+		len++;
+	while(i < len)
 	{
-		while(argv[1][i])
-		{
-			if(argv[1][i] >= 'a' && argv[1][i] <= 'm')
-				argv[1][i] += 13;
-			else if (argv[1][i] >= 'n' && argv[1][i] <= 'z')
-				argv[1][i] -= 13;
-			else if (argv[1][i] >= 'A' && argv[1][i] <= 'M')
-				argv[1][i] += 13;
-			else if(argv[1][i] >= 'N' && argv[1][i] <= 'Z')
-				argv[1][i] -= 13;
-			write(1, &argv[1][i], 1);
-			i++;
-		}
+		copy = str[i];
+		str[i] = str[len-1];
+		str[len-1] = copy;
+		i++;
+		len--;
 	}
-	write(1, "\n", 1);
+	return (str);
+}
+
+// DO NOT TURNIN BELOW
+
+#include <stdio.h>
+
+int		main(void)
+{
+	char *str;
+	str[] = "12345";
+
+	printf("%s", ft_strrev(str));
 	return (0);
 }

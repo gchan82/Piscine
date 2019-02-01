@@ -1,38 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rot_13.c                                           :+:      :+:    :+:   */
+/*   ft_strcmp2.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gachan <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/30 12:35:51 by gachan            #+#    #+#             */
-/*   Updated: 2019/01/31 11:35:08 by gachan           ###   ########.fr       */
+/*   Created: 2019/01/30 20:48:46 by gachan            #+#    #+#             */
+/*   Updated: 2019/01/30 21:27:24 by gachan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int		main(int argc, char **argv)
+int		ft_strcmp(char *s1, char *s2)
 {
 	int i;
 
 	i = 0;
-	if (argc == 2)
+	while(s2[i])
 	{
-		while(argv[1][i])
+		if(s2[i] != s1[i])
 		{
-			if(argv[1][i] >= 'a' && argv[1][i] <= 'm')
-				argv[1][i] += 13;
-			else if (argv[1][i] >= 'n' && argv[1][i] <= 'z')
-				argv[1][i] -= 13;
-			else if (argv[1][i] >= 'A' && argv[1][i] <= 'M')
-				argv[1][i] += 13;
-			else if(argv[1][i] >= 'N' && argv[1][i] <= 'Z')
-				argv[1][i] -= 13;
-			write(1, &argv[1][i], 1);
+			return (s1[i]-s2[i]);
+		}
+		while(s1[i] == s2[i] && s1[i]) // while loop: add s1[i]
+		{
 			i++;
 		}
 	}
-	write(1, "\n", 1);
 	return (0);
+}
+
+//DELETE BELOW BEFORE TURNIN
+//
+#include <stdio.h>
+
+
+int		main()
+{
+	char s1[] = "something";
+	char s2[] = "something";
+
+	printf("%d", ft_strcmp(s1,s2));
 }

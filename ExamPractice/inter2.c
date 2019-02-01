@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rot_13.c                                           :+:      :+:    :+:   */
+/*   inter2.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gachan <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/30 12:35:51 by gachan            #+#    #+#             */
-/*   Updated: 2019/01/31 11:35:08 by gachan           ###   ########.fr       */
+/*   Created: 2019/01/31 12:04:12 by gachan            #+#    #+#             */
+/*   Updated: 2019/01/31 20:20:06 by gachan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,44 @@
 
 int		main(int argc, char **argv)
 {
-	int i;
-
-	i = 0;
-	if (argc == 2)
+	if(argc == 3)
 	{
+		int buf[128];
+		int i;
+		int j;
+		int k;
+
+		i = 0;
+		/*while(i < 128)
+		{
+			buf[i] = 0;
+			i++;
+		}*/
+		i = 0;
 		while(argv[1][i])
 		{
-			if(argv[1][i] >= 'a' && argv[1][i] <= 'm')
-				argv[1][i] += 13;
-			else if (argv[1][i] >= 'n' && argv[1][i] <= 'z')
-				argv[1][i] -= 13;
-			else if (argv[1][i] >= 'A' && argv[1][i] <= 'M')
-				argv[1][i] += 13;
-			else if(argv[1][i] >= 'N' && argv[1][i] <= 'Z')
-				argv[1][i] -= 13;
-			write(1, &argv[1][i], 1);
+			if(buf[(int)argv[1][i]] == 0)
+				buf[(int)argv[1][i]]= 1;
 			i++;
 		}
+		j = 0;
+		while(argv[2][j])
+		{
+			if(buf[(int)argv[2][j]] == 1)
+				buf[(int)argv[2][j]] = 2;
+			j++;
+		}
+		k = 0;;
+		while(argv[1][k])
+		{
+			if(buf[(int)argv[1][k]] == 2)
+			{
+				write(1, &argv[1][k],1);
+				buf[(int)argv[1][k]] = 1;
+			}
+			k++;
+		}
+
 	}
 	write(1, "\n", 1);
 	return (0);

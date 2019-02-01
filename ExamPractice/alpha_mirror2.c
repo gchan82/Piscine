@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rot_13.c                                           :+:      :+:    :+:   */
+/*   alpha_mirror2.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gachan <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/30 12:35:51 by gachan            #+#    #+#             */
-/*   Updated: 2019/01/31 11:35:08 by gachan           ###   ########.fr       */
+/*   Created: 2019/01/31 18:38:14 by gachan            #+#    #+#             */
+/*   Updated: 2019/01/31 18:57:09 by gachan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,21 @@
 
 int		main(int argc, char **argv)
 {
-	int i;
-
-	i = 0;
-	if (argc == 2)
+	if(argc == 2)
 	{
+		int i;
+
+		i = 0;
 		while(argv[1][i])
 		{
-			if(argv[1][i] >= 'a' && argv[1][i] <= 'm')
-				argv[1][i] += 13;
-			else if (argv[1][i] >= 'n' && argv[1][i] <= 'z')
-				argv[1][i] -= 13;
-			else if (argv[1][i] >= 'A' && argv[1][i] <= 'M')
-				argv[1][i] += 13;
-			else if(argv[1][i] >= 'N' && argv[1][i] <= 'Z')
-				argv[1][i] -= 13;
-			write(1, &argv[1][i], 1);
+			if(argv[1][i] >= 'a' && argv[1][i] <= 'z')
+				argv[1][i] = ('a'+'z' - argv[1][i]);
+			else if(argv[1][i] >= 'A' && argv[1][i] <= 'Z')
+				argv[1][i] = ('A' + 'Z' - argv[1][i]);
+			write(1, &argv[1][i],1);
 			i++;
 		}
 	}
-	write(1, "\n", 1);
+	write(1, "\n",1);
 	return (0);
 }
