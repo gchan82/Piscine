@@ -8,6 +8,16 @@ https://github.com/jraleman/42_Exam-C
 
 https://github.com/pbondoer/42-evalexpr
 
+https://github.com/Eywek/
+
+https://github.com/gcamerli
+
+https://github.com/Troys-Code -- level 0/1 explanations
+
+--
+
+find . name "*strrev*"
+
 -----
 
 Test-monial - test work before submission:
@@ -15,6 +25,10 @@ https://github.com/FeeJai/42-test-monial
 
 
 ----
+
+
+-----
+
 
 https://github.com/teddav/42Projects/tree/master/EXAMS/CBeginner0
 
@@ -31,6 +45,10 @@ https://github.com/joaquim-oliveira-neto/42-Piscine-C
 ------
 
 https://courses.edx.org/courses/course-v1:HarvardX+CS50+AP/course/
+
+-----
+Internships
+https://aiesec.org/
 
 -----
 

@@ -16,7 +16,7 @@ Ex03 - ft_div_mod
 Ex04 - ft_ultimate_div_mod
 Ex05 - ft_putstr
 Ex06 - ft_strlen
-Ex07 - ft_strrv
+Ex07 - ft_strrev
 Ex08 - ft_atoi
 Ex09 - ft_sort_integer_table
 /nfs/2019/g/gachan/Downloads/functions_list.txt
